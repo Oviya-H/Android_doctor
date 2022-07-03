@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".popup">
+    <TextView
+        android:id="@+id/menu_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/menu_home_frag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightskyblue"
+        android:text="Home"
+        android:textColor="@color/Deep_purple"
+        android:layout_below="@id/menu_name"
+        android:onClick="backTOhome"
+        android:drawableLeft="@drawable/ic_baseline_home_24"
+        android:layout_margin="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/menu_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:textColor="@color/Deep_purple"
+        android:background="@color/lightskyblue"
+        android:drawableLeft="@drawable/ic_baseline_exit_to_app_24"
+        android:layout_below="@id/menu_home_frag"
+        android:onClick="Logout_page"
+        android:layout_margin="10dp"
+        />
+
+
+</RelativeLayout>
